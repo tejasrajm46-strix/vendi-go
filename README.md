@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="assets/readme/vendi-go-hero.svg" alt="Vendi-Go — a smart supplement kiosk that dispenses measured servings of pre-workout, protein and creatine" width="100%" />
+  <img src="assets/readme/vendi-go-hero.gif" alt="Vendi-Go — a smart supplement kiosk dispensing a measured serving of pre-workout into a cup" width="100%" />
+  <br />
+  <a href="assets/readme/vendi-go-hero.svg"><sub>animated SVG version</sub></a>
 </div>
 
 <p align="center">
@@ -81,9 +83,11 @@ server.mjs          local static server
 | White | `#FFFFFF` | type, product cards, controls |
 | Cobalt Blue Deep | `#2C3480` | accent, active states, the pour |
 
-The hero above is a single SVG (`assets/readme/vendi-go-hero.svg`) animated
-with SMIL, so it needs no GIF and stays under 8 KB. It renders as a still frame
-where animation is not supported.
+The hero above ships twice. `vendi-go-hero.gif` is the one GitHub renders as
+motion: 1000 × 367, 72 frames at 12 fps, one seamless 6-second loop, ~1.7 MB,
+rendered frame by frame from the SVG at 1200 × 440. `vendi-go-hero.svg` is the
+source illustration — the same kiosk animated with SMIL — for places that will
+not load a GIF and for anyone who wants to edit it.
 
 ---
 

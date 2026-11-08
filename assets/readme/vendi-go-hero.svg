@@ -1,140 +1,319 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
-  <title id="title">Vendi-Go — your supplements, by the serving</title>
-  <desc id="desc">Animated hero: the Vendi-Go wordmark beside a kiosk that dispenses a measured serving of pre-workout into a cup.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+  <title id="title">Vendi-Go — the machine, by the serving</title>
+  <desc id="desc">Animated hero: a realistic Vendi-Go kiosk with a lit glass shelf of supplement cans, a touchscreen, a card reader and a cup filling under the dispenser.</desc>
   <defs>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.05"/>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#FFFFFF" stroke-opacity="0.045"/>
     </pattern>
     <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#2C3480" stop-opacity="0.9"/>
+      <stop offset="0" stop-color="#2C3480" stop-opacity="0.95"/>
+      <stop offset="0.6" stop-color="#2C3480" stop-opacity="0.35"/>
       <stop offset="1" stop-color="#2C3480" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="cobalt" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#2C3480"/>
-      <stop offset="1" stop-color="#1B2054"/>
+      <stop offset="0" stop-color="#3A45A8"/>
+      <stop offset="1" stop-color="#2C3480"/>
     </linearGradient>
-    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="cabinet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17171F"/>
+      <stop offset="0.55" stop-color="#0D0D14"/>
+      <stop offset="1" stop-color="#07070B"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#101018"/>
+      <stop offset="1" stop-color="#050508"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.09"/>
+      <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.02"/>
+      <stop offset="1" stop-color="#2C3480" stop-opacity="0.10"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.12"/>
       <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
-    <clipPath id="frame"><rect width="1200" height="420" rx="28"/></clipPath>
-    <clipPath id="cupClip"><path d="M0 0h72l-7 62H7Z"/></clipPath>
+    <linearGradient id="canWhite" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9BCCB"/>
+      <stop offset="0.28" stop-color="#FFFFFF"/>
+      <stop offset="0.72" stop-color="#E6E7EE"/>
+      <stop offset="1" stop-color="#9EA2B4"/>
+    </linearGradient>
+    <linearGradient id="canCobalt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1E245C"/>
+      <stop offset="0.3" stop-color="#3E49B0"/>
+      <stop offset="0.7" stop-color="#2C3480"/>
+      <stop offset="1" stop-color="#171C4C"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151848"/>
+      <stop offset="1" stop-color="#0A0C22"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2C3480" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#2C3480" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#2C3480" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="tight" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="440" rx="26"/></clipPath>
+    <clipPath id="glassClip"><rect x="716" y="76" width="304" height="204" rx="12"/></clipPath>
+    <clipPath id="cupClip"><path d="M0 0h60l-6 50H6Z"/></clipPath>
   </defs>
 
   <g clip-path="url(#frame)">
-    <rect width="1200" height="420" fill="#000000"/>
-    <rect width="1200" height="420" fill="url(#grid)"/>
-    <circle cx="986" cy="118" r="300" fill="url(#glow)">
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="7s" repeatCount="indefinite"/>
+    <rect width="1200" height="440" fill="#000000"/>
+    <rect width="1200" height="440" fill="url(#grid)"/>
+    <circle cx="948" cy="196" r="290" fill="url(#glow)">
+      <animate attributeName="opacity" values="0.55;0.95;0.55" dur="6s" repeatCount="indefinite"/>
     </circle>
+
     <rect x="0" y="0" width="1200" height="3" fill="#2C3480"/>
-    <rect x="0" y="0" width="220" height="3" fill="#FFFFFF" fill-opacity="0.85">
-      <animate attributeName="x" values="-220;1200" dur="9s" repeatCount="indefinite"/>
+    <rect x="0" y="0" width="190" height="3" fill="#FFFFFF" fill-opacity="0.85">
+      <animate attributeName="x" values="-190;1200" dur="6s" repeatCount="indefinite"/>
     </rect>
 
     <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
-      <text x="64" y="98" fill="#FFFFFF" fill-opacity="0.55" font-size="13" font-weight="700" letter-spacing="3.6">SMART SUPPLEMENT KIOSK</text>
-      <rect x="64" y="112" width="46" height="3" fill="#2C3480"/>
+      <text x="64" y="102" fill="#FFFFFF" fill-opacity="0.55" font-size="13" font-weight="700" letter-spacing="3.6">SMART SUPPLEMENT KIOSK</text>
+      <rect x="64" y="116" width="46" height="3" fill="#2C3480"/>
 
-      <text x="64" y="198" fill="#FFFFFF" font-size="86" font-weight="800" letter-spacing="-3">VENDI</text>
-      <rect x="334" y="130" width="124" height="78" rx="12" fill="url(#cobalt)">
-        <animate attributeName="y" values="137;130;137" dur="6s" repeatCount="indefinite"/>
+      <text x="64" y="204" fill="#FFFFFF" font-size="82" font-weight="800" letter-spacing="-3">VENDI</text>
+      <rect x="330" y="140" width="118" height="72" rx="12" fill="url(#cobalt)">
+        <animate attributeName="y" values="146;140;146" dur="6s" repeatCount="indefinite"/>
       </rect>
-      <text x="354" y="198" fill="#FFFFFF" font-size="86" font-weight="800" letter-spacing="-3">GO</text>
+      <text x="348" y="204" fill="#FFFFFF" font-size="82" font-weight="800" letter-spacing="-3">GO</text>
 
-      <text x="64" y="248" fill="#FFFFFF" fill-opacity="0.82" font-size="25" font-weight="500">Your supplements. By the serving.</text>
+      <text x="64" y="252" fill="#FFFFFF" fill-opacity="0.84" font-size="24" font-weight="500">Your supplements. By the serving.</text>
 
       <g font-size="11" font-weight="700" letter-spacing="1.8">
-        <rect x="64" y="274" width="132" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.14"/>
-        <text x="84" y="294" fill="#FFFFFF" fill-opacity="0.8">PRE-WORKOUT</text>
-        <rect x="208" y="274" width="104" height="30" rx="15" fill="#2C3480"/>
-        <text x="228" y="294" fill="#FFFFFF" fill-opacity="0.95">PROTEIN</text>
-        <rect x="324" y="274" width="112" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.14"/>
-        <text x="344" y="294" fill="#FFFFFF" fill-opacity="0.8">CREATINE</text>
+        <rect x="64" y="278" width="132" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.14"/>
+        <text x="84" y="298" fill="#FFFFFF" fill-opacity="0.8">PRE-WORKOUT</text>
+        <rect x="208" y="278" width="104" height="30" rx="15" fill="#2C3480"/>
+        <text x="228" y="298" fill="#FFFFFF" fill-opacity="0.95">PROTEIN</text>
+        <rect x="324" y="278" width="112" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.14"/>
+        <text x="344" y="298" fill="#FFFFFF" fill-opacity="0.8">CREATINE</text>
       </g>
 
-      <text x="64" y="352" fill="#FFFFFF" fill-opacity="0.42" font-size="12" font-weight="600" letter-spacing="2.6">PICK · MEASURE · POUR · COLLECT</text>
-      <rect x="64" y="372" width="300" height="2" fill="#2C3480" fill-opacity="0.9"/>
+      <text x="64" y="358" fill="#FFFFFF" fill-opacity="0.45" font-size="12" font-weight="600" letter-spacing="2.6">PICK · MEASURE · POUR · COLLECT</text>
+      <rect x="64" y="378" width="300" height="2" fill="#2C3480" fill-opacity="0.9"/>
     </g>
 
-    <g transform="translate(768 46)" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
-      <rect width="368" height="328" rx="22" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.12"/>
-      <rect x="20" y="18" width="328" height="292" rx="16" fill="none" stroke="#FFFFFF" stroke-opacity="0.05"/>
-      <text x="26" y="42" fill="#FFFFFF" fill-opacity="0.55" font-size="11" font-weight="700" letter-spacing="2.4">SERVING 01 · 12 g</text>
-      <circle cx="332" cy="38" r="4.5" fill="#FFFFFF" fill-opacity="0.2">
-        <animate attributeName="fill-opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/>
-      </circle>
+    <ellipse cx="930" cy="414" rx="272" ry="13" fill="#000000" opacity="0.9" filter="url(#soft)"/>
+    <ellipse cx="930" cy="406" rx="180" ry="8" fill="#2C3480" opacity="0.28" filter="url(#soft)"/>
 
-      <g>
-        <g transform="translate(26 66)">
-          <rect width="96" height="136" rx="12" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.09"/>
-          <rect x="34" y="20" width="28" height="52" rx="7" fill="#FFFFFF" fill-opacity="0.92"/>
-          <rect x="34" y="80" width="28" height="7" rx="3.5" fill="#2C3480"/>
-          <rect x="22" y="102" width="52" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.26"/>
-          <rect x="22" y="114" width="32" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.16"/>
+    <g>
+      <path d="M1136 46 L1172 30 L1172 382 L1136 400 Z" fill="url(#side)" stroke="#FFFFFF" stroke-opacity="0.07"/>
+      <path d="M1136 46 L1172 30 L1172 44 L1136 60 Z" fill="#FFFFFF" fill-opacity="0.07"/>
+      <rect x="700" y="26" width="436" height="374" rx="18" fill="url(#cabinet)" stroke="#FFFFFF" stroke-opacity="0.16"/>
+      <rect x="700" y="26" width="436" height="374" rx="18" fill="none" stroke="#2C3480" stroke-opacity="0.35" filter="url(#tight)"/>
+
+      <path d="M718 34 H1118" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M718 392 H1118" stroke="#000000" stroke-opacity="0.85" stroke-width="2" stroke-linecap="round"/>
+
+      <text x="722" y="60" fill="#FFFFFF" fill-opacity="0.5" font-size="10.5" font-weight="700" letter-spacing="3">VENDI-GO</text>
+      <text x="1114" y="60" fill="#FFFFFF" fill-opacity="0.28" font-size="8.5" font-weight="600" letter-spacing="1.6" text-anchor="end">SERIES 01</text>
+
+      <circle cx="712" cy="40" r="1.9" fill="#FFFFFF" fill-opacity="0.2"/>
+      <circle cx="1124" cy="40" r="1.9" fill="#FFFFFF" fill-opacity="0.2"/>
+      <circle cx="712" cy="386" r="1.9" fill="#FFFFFF" fill-opacity="0.12"/>
+      <circle cx="1124" cy="386" r="1.9" fill="#FFFFFF" fill-opacity="0.12"/>
+
+      <rect x="716" y="76" width="304" height="204" rx="12" fill="#050509"/>
+      <g clip-path="url(#glassClip)">
+        <rect x="716" y="76" width="304" height="204" fill="#07070E"/>
+
+        <g fill="#FFFFFF" fill-opacity="0.08">
+          <rect x="726" y="86" width="284" height="1.4"/>
+          <rect x="726" y="144" width="284" height="1.4"/>
+          <rect x="726" y="202" width="284" height="1.4"/>
+          <rect x="726" y="260" width="284" height="1.4"/>
         </g>
-        <g transform="translate(136 66)">
-          <rect width="96" height="136" rx="12" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.09"/>
-          <rect x="34" y="20" width="28" height="52" rx="7" fill="#2C3480"/>
-          <rect x="34" y="80" width="28" height="7" rx="3.5" fill="#FFFFFF" fill-opacity="0.85"/>
-          <rect x="22" y="102" width="52" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.26"/>
-          <rect x="22" y="114" width="40" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.16"/>
+
+        <g>
+          <rect x="728" y="92" width="30" height="50" rx="8" fill="url(#canWhite)"/>
+          <ellipse cx="743" cy="93" rx="11" ry="3" fill="#FFFFFF" fill-opacity="0.75"/>
+          <rect x="728" y="118" width="30" height="5" fill="#2C3480"/>
+          <ellipse cx="743" cy="140" rx="12" ry="2.6" fill="#000000" opacity="0.45"/>
+
+          <rect x="802" y="92" width="30" height="50" rx="8" fill="url(#canCobalt)"/>
+          <ellipse cx="817" cy="93" rx="11" ry="3" fill="#FFFFFF" fill-opacity="0.5"/>
+          <rect x="802" y="118" width="30" height="5" fill="#FFFFFF" fill-opacity="0.55"/>
+          <ellipse cx="817" cy="140" rx="12" ry="2.6" fill="#000000" opacity="0.45"/>
+
+          <rect x="876" y="92" width="30" height="50" rx="8" fill="url(#canWhite)"/>
+          <ellipse cx="891" cy="93" rx="11" ry="3" fill="#FFFFFF" fill-opacity="0.75"/>
+          <rect x="876" y="118" width="30" height="5" fill="#2C3480"/>
+          <ellipse cx="891" cy="140" rx="12" ry="2.6" fill="#000000" opacity="0.45"/>
+
+          <rect x="950" y="92" width="30" height="50" rx="8" fill="url(#canCobalt)"/>
+          <ellipse cx="965" cy="93" rx="11" ry="3" fill="#FFFFFF" fill-opacity="0.5"/>
+          <rect x="950" y="118" width="30" height="5" fill="#FFFFFF" fill-opacity="0.55"/>
+          <ellipse cx="965" cy="140" rx="12" ry="2.6" fill="#000000" opacity="0.45"/>
         </g>
-        <g transform="translate(246 66)">
-          <rect width="96" height="136" rx="12" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.09"/>
-          <rect x="34" y="20" width="28" height="52" rx="7" fill="#FFFFFF" fill-opacity="0.92"/>
-          <rect x="34" y="80" width="28" height="7" rx="3.5" fill="#2C3480"/>
-          <rect x="22" y="102" width="52" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.26"/>
-          <rect x="22" y="114" width="26" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.16"/>
+
+        <g>
+          <rect x="728" y="150" width="30" height="50" rx="8" fill="url(#canCobalt)"/>
+          <ellipse cx="743" cy="151" rx="11" ry="3" fill="#FFFFFF" fill-opacity="0.5"/>
+          <rect x="728" y="176" width="30" height="5" fill="#FFFFFF" fill-opacity="0.55"/>
+          <ellipse cx="743" cy="198" rx="12" ry="2.6" fill="#000000" opacity="0.45"/>
+
+          <rect x="802" y="150" width="30" height="50" rx="8" fill="url(#canWhite)"/>
+          <ellipse cx="817" cy="151" rx="11" ry="3" fill="#FFFFFF" fill-opacity="0.75"/>
+          <rect x="802" y="176" width="30" height="5" fill="#2C3480"/>
+          <ellipse cx="817" cy="198" rx="12" ry="2.6" fill="#000000" opacity="0.45"/>
+
+          <rect x="876" y="150" width="30" height="50" rx="8" fill="url(#canWhite)"/>
+          <ellipse cx="891" cy="151" rx="11" ry="3" fill="#FFFFFF" fill-opacity="0.75"/>
+          <rect x="876" y="176" width="30" height="5" fill="#2C3480"/>
+          <ellipse cx="891" cy="198" rx="12" ry="2.6" fill="#000000" opacity="0.45"/>
+
+          <rect x="950" y="150" width="30" height="50" rx="8" fill="url(#canCobalt)"/>
+          <ellipse cx="965" cy="151" rx="11" ry="3" fill="#FFFFFF" fill-opacity="0.5"/>
+          <rect x="950" y="176" width="30" height="5" fill="#FFFFFF" fill-opacity="0.55"/>
+          <ellipse cx="965" cy="198" rx="12" ry="2.6" fill="#000000" opacity="0.45"/>
         </g>
-      </g>
 
-      <g fill="#FFFFFF" fill-opacity="0.7">
-        <rect x="72" y="206" width="2" height="0">
-          <animate attributeName="height" values="0;46;0" dur="3.6s" repeatCount="indefinite"/>
-          <animate attributeName="fill-opacity" values="0;0.75;0" dur="3.6s" repeatCount="indefinite"/>
-        </rect>
-        <rect x="186" y="206" width="2" height="0">
-          <animate attributeName="height" values="0;46;0" dur="3.6s" begin="0.8s" repeatCount="indefinite"/>
-          <animate attributeName="fill-opacity" values="0;0.75;0" dur="3.6s" begin="0.8s" repeatCount="indefinite"/>
-        </rect>
-        <rect x="298" y="206" width="2" height="0">
-          <animate attributeName="height" values="0;46;0" dur="3.6s" begin="1.6s" repeatCount="indefinite"/>
-          <animate attributeName="fill-opacity" values="0;0.75;0" dur="3.6s" begin="1.6s" repeatCount="indefinite"/>
-        </rect>
-      </g>
+        <g>
+          <rect x="728" y="208" width="30" height="50" rx="8" fill="url(#canWhite)"/>
+          <ellipse cx="743" cy="209" rx="11" ry="3" fill="#FFFFFF" fill-opacity="0.75"/>
+          <rect x="728" y="234" width="30" height="5" fill="#2C3480"/>
+          <ellipse cx="743" cy="256" rx="12" ry="2.6" fill="#000000" opacity="0.45"/>
 
-      <g fill="#FFFFFF" fill-opacity="0.6">
-        <circle cx="73" cy="214" r="1.6">
-          <animate attributeName="cy" values="208;250" dur="1.2s" repeatCount="indefinite"/>
-          <animate attributeName="fill-opacity" values="0;0.7;0" dur="1.2s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="187" cy="214" r="1.6">
-          <animate attributeName="cy" values="208;250" dur="1.2s" begin="0.4s" repeatCount="indefinite"/>
-          <animate attributeName="fill-opacity" values="0;0.7;0" dur="1.2s" begin="0.4s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="299" cy="214" r="1.6">
-          <animate attributeName="cy" values="208;250" dur="1.2s" begin="0.9s" repeatCount="indefinite"/>
-          <animate attributeName="fill-opacity" values="0;0.7;0" dur="1.2s" begin="0.9s" repeatCount="indefinite"/>
-        </circle>
-      </g>
+          <rect x="802" y="208" width="30" height="50" rx="8" fill="url(#canCobalt)"/>
+          <ellipse cx="817" cy="209" rx="11" ry="3" fill="#FFFFFF" fill-opacity="0.5"/>
+          <rect x="802" y="234" width="30" height="5" fill="#FFFFFF" fill-opacity="0.55"/>
+          <ellipse cx="817" cy="256" rx="12" ry="2.6" fill="#000000" opacity="0.45"/>
 
-      <g transform="translate(150 258)">
-        <path d="M0 0h72l-7 62H7Z" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.4"/>
-        <g clip-path="url(#cupClip)">
-          <rect x="0" y="62" width="72" height="0" fill="#2C3480">
-            <animate attributeName="y" values="62;18;18;62" dur="7.2s" repeatCount="indefinite"/>
-            <animate attributeName="height" values="0;44;44;0" dur="7.2s" repeatCount="indefinite"/>
+          <rect x="876" y="208" width="30" height="50" rx="8" fill="url(#canCobalt)"/>
+          <ellipse cx="891" cy="209" rx="11" ry="3" fill="#FFFFFF" fill-opacity="0.5"/>
+          <rect x="876" y="234" width="30" height="5" fill="#FFFFFF" fill-opacity="0.55"/>
+          <ellipse cx="891" cy="256" rx="12" ry="2.6" fill="#000000" opacity="0.45"/>
+
+          <rect x="950" y="208" width="30" height="50" rx="8" fill="url(#canWhite)"/>
+          <ellipse cx="965" cy="209" rx="11" ry="3" fill="#FFFFFF" fill-opacity="0.75"/>
+          <rect x="950" y="234" width="30" height="5" fill="#2C3480"/>
+          <ellipse cx="965" cy="256" rx="12" ry="2.6" fill="#000000" opacity="0.45"/>
+        </g>
+
+        <g fill="#FFFFFF" fill-opacity="0.07">
+          <rect x="728" y="144" width="44" height="9" rx="2"/>
+          <rect x="802" y="144" width="44" height="9" rx="2"/>
+          <rect x="876" y="144" width="44" height="9" rx="2"/>
+          <rect x="950" y="144" width="44" height="9" rx="2"/>
+          <rect x="728" y="202" width="44" height="9" rx="2"/>
+          <rect x="802" y="202" width="44" height="9" rx="2"/>
+          <rect x="876" y="202" width="44" height="9" rx="2"/>
+          <rect x="950" y="202" width="44" height="9" rx="2"/>
+        </g>
+
+        <rect x="716" y="76" width="304" height="204" fill="url(#scan)" opacity="0.7">
+          <animate attributeName="y" values="76;280;76" dur="6s" repeatCount="indefinite"/>
+        </rect>
+
+        <rect x="716" y="76" width="304" height="204" fill="url(#glass)"/>
+        <polygon points="716,76 796,76 700,280 716,280" fill="#FFFFFF" fill-opacity="0.035"/>
+        <g transform="skewX(-16)">
+          <rect x="-260" y="50" width="120" height="260" fill="url(#sheen)">
+            <animate attributeName="x" values="-260;1220" dur="6s" repeatCount="indefinite"/>
           </rect>
         </g>
-        <rect x="4" y="-7" width="64" height="7" rx="3.5" fill="#FFFFFF" fill-opacity="0.32"/>
       </g>
 
-      <rect x="26" y="300" width="316" height="2" rx="1" fill="#2C3480" fill-opacity="0.9"/>
-      <rect x="26" y="300" width="316" height="2" rx="1" fill="url(#fade)" opacity="0.5">
-        <animate attributeName="opacity" values="0.15;0.6;0.15" dur="4.5s" repeatCount="indefinite"/>
+      <rect x="716" y="76" width="304" height="204" rx="12" fill="none" stroke="#FFFFFF" stroke-opacity="0.16"/>
+      <path d="M722 86 V270" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="1.4"/>
+      <rect x="716" y="280" width="304" height="2" rx="1" fill="#2C3480">
+        <animate attributeName="fill-opacity" values="0.45;1;0.45" dur="6s" repeatCount="indefinite"/>
       </rect>
+
+      <g>
+        <rect x="1032" y="76" width="88" height="204" rx="10" fill="#07070C" stroke="#FFFFFF" stroke-opacity="0.12"/>
+        <rect x="1040" y="84" width="72" height="68" rx="7" fill="url(#screen)" stroke="#2C3480" stroke-opacity="0.85"/>
+        <text x="1046" y="100" fill="#FFFFFF" fill-opacity="0.55" font-size="7.5" font-weight="700" letter-spacing="1">SERVING</text>
+        <text x="1046" y="120" fill="#FFFFFF" font-size="17" font-weight="800">12 g</text>
+        <rect x="1046" y="130" width="60" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.15"/>
+        <rect x="1046" y="130" width="18" height="4" rx="2" fill="#2C3480">
+          <animate attributeName="width" values="14;60;14" dur="6s" repeatCount="indefinite"/>
+        </rect>
+        <circle cx="1102" cy="98" r="2.6" fill="#FFFFFF" fill-opacity="0.5">
+          <animate attributeName="fill-opacity" values="0.2;1;0.2" dur="1.5s" repeatCount="indefinite"/>
+        </circle>
+
+        <g fill="#FFFFFF" fill-opacity="0.14" stroke="#FFFFFF" stroke-opacity="0.18">
+          <circle cx="1052" cy="172" r="6"/>
+          <circle cx="1076" cy="172" r="6"/>
+          <circle cx="1100" cy="172" r="6"/>
+          <circle cx="1052" cy="194" r="6"/>
+          <circle cx="1076" cy="194" r="6"/>
+          <circle cx="1100" cy="194" r="6"/>
+          <circle cx="1052" cy="216" r="6"/>
+          <circle cx="1076" cy="216" r="6"/>
+          <circle cx="1100" cy="216" r="6"/>
+        </g>
+        <text x="1052" y="174.5" fill="#FFFFFF" fill-opacity="0.55" font-size="6.5" font-weight="700">1</text>
+        <text x="1076" y="174.5" fill="#FFFFFF" fill-opacity="0.55" font-size="6.5" font-weight="700">2</text>
+        <text x="1100" y="174.5" fill="#FFFFFF" fill-opacity="0.55" font-size="6.5" font-weight="700">3</text>
+        <text x="1052" y="196.5" fill="#FFFFFF" fill-opacity="0.55" font-size="6.5" font-weight="700">4</text>
+        <text x="1076" y="196.5" fill="#FFFFFF" fill-opacity="0.55" font-size="6.5" font-weight="700">5</text>
+        <text x="1100" y="196.5" fill="#FFFFFF" fill-opacity="0.55" font-size="6.5" font-weight="700">6</text>
+        <text x="1052" y="218.5" fill="#FFFFFF" fill-opacity="0.55" font-size="6.5" font-weight="700">7</text>
+        <text x="1076" y="218.5" fill="#FFFFFF" fill-opacity="0.55" font-size="6.5" font-weight="700">8</text>
+        <text x="1100" y="218.5" fill="#FFFFFF" fill-opacity="0.55" font-size="6.5" font-weight="700">9</text>
+
+        <rect x="1042" y="244" width="68" height="6" rx="3" fill="#000000" stroke="#FFFFFF" stroke-opacity="0.22"/>
+        <rect x="1042" y="244" width="68" height="6" rx="3" fill="#2C3480" fill-opacity="0.25">
+          <animate attributeName="fill-opacity" values="0.1;0.5;0.1" dur="6s" repeatCount="indefinite"/>
+        </rect>
+        <path d="M1098 262a8 8 0 0 1 0-12M1103 268a14 14 0 0 1 0-24" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+      </g>
+
+      <rect x="716" y="292" width="404" height="66" rx="10" fill="#040407" stroke="#FFFFFF" stroke-opacity="0.1"/>
+      <rect x="722" y="298" width="392" height="10" rx="5" fill="#000000" opacity="0.9"/>
+      <rect x="880" y="300" width="120" height="7" rx="3.5" fill="#FFFFFF" fill-opacity="0.16">
+        <animate attributeName="y" values="300;303;300" dur="6s" repeatCount="indefinite"/>
+      </rect>
+
+      <rect x="936" y="284" width="10" height="10" rx="3" fill="#FFFFFF" fill-opacity="0.22"/>
+      <rect x="939.5" y="292" width="3" height="0" fill="url(#cobalt)">
+        <animate attributeName="height" values="0;26;26;0;0" keyTimes="0;0.16;0.42;0.5;1" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="fill-opacity" values="0;0.9;0.9;0;0" keyTimes="0;0.16;0.42;0.5;1" dur="6s" repeatCount="indefinite"/>
+      </rect>
+
+      <g transform="translate(910 316)">
+        <animateTransform attributeName="transform" type="translate" values="910 316;910 316;924 316;924 316;910 316" keyTimes="0;0.45;0.6;0.85;1" dur="6s" repeatCount="indefinite"/>
+        <path d="M0 0h60l-6 50H6Z" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.4"/>
+        <g clip-path="url(#cupClip)">
+          <rect x="0" y="50" width="60" height="0" fill="url(#cobalt)">
+            <animate attributeName="y" values="50;16;16;50;50" keyTimes="0;0.16;0.42;0.5;1" dur="6s" repeatCount="indefinite"/>
+            <animate attributeName="height" values="0;34;34;0;0" keyTimes="0;0.16;0.42;0.5;1" dur="6s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+        <rect x="3" y="-6" width="54" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.3"/>
+        <rect x="2" y="12" width="3" height="26" rx="1.5" fill="#FFFFFF" fill-opacity="0.18"/>
+      </g>
+
+      <g fill="#FFFFFF" fill-opacity="0.5">
+        <circle cx="941" cy="306" r="1.4">
+          <animate attributeName="cy" values="300;338" dur="1.4s" repeatCount="indefinite"/>
+          <animate attributeName="fill-opacity" values="0;0.6;0" dur="1.4s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="945" cy="306" r="1.2">
+          <animate attributeName="cy" values="300;338" dur="1.4s" begin="0.5s" repeatCount="indefinite"/>
+          <animate attributeName="fill-opacity" values="0;0.5;0" dur="1.4s" begin="0.5s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+
+      <g stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2" stroke-linecap="round">
+        <path d="M724 368h60M724 376h60M724 384h60"/>
+      </g>
+      <rect x="1032" y="366" width="72" height="18" rx="4" fill="#0A0A12" stroke="#FFFFFF" stroke-opacity="0.08"/>
+      <text x="1068" y="379" fill="#FFFFFF" fill-opacity="0.3" font-size="7.5" font-weight="700" letter-spacing="1.4" text-anchor="middle">24/7</text>
+
+      <rect x="732" y="394" width="44" height="7" rx="3" fill="#0A0A12" stroke="#FFFFFF" stroke-opacity="0.1"/>
+      <rect x="1060" y="394" width="44" height="7" rx="3" fill="#0A0A12" stroke="#FFFFFF" stroke-opacity="0.1"/>
     </g>
   </g>
 </svg>
