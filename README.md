@@ -80,7 +80,7 @@ Nutrition and MT. The wallet history shows Gold Standard Whey at ₹100 per
 serving. Serving weights follow each product's label; stock counts are demo data.
 
 <div align="center">
-  <img src="assets/readme/site-preview.png" alt="The Vendi-Go homepage: hero headline with floating product cards and the machine call to action" width="100%" />
+  <img src="assets/readme/homepage.png" alt="The Vendi-Go homepage: hero headline with floating product cards and the machine call to action" width="100%" />
   <br />
   <sub>vendi-go.antideploy.app — the hero, with the shelf cards in motion.</sub>
 </div>
