@@ -1,0 +1,19 @@
+# build output and local tooling
+/dist/
+/antideploy/
+/badgey-replica/
+/.reference/
+/.freebuff/
+/out/
+node_modules/
+
+# root-level capture screenshots are working files, not site assets
+/*.png
+/*.jpg
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# deployment metadata for a preview host, not part of the project
+/.antideploy.json
